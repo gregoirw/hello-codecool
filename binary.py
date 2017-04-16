@@ -36,7 +36,6 @@ while start==1:
     #print(number_bin)
     if b ==10:
         number_bin.reverse()
-        print("Binary number is", end=":")
         for x in number_bin:
             print(x, end='')
         #print(number_bin)
@@ -46,7 +45,6 @@ while start==1:
         del number_power[0]
         for i in range(0, len(number_power)):
             number_dec_final.append(number_power[i]*number_dec[i])
-        print("Decimal number is", end=":")
         #print(number_power)
         #print(number_dec)
         print (sum(number_dec_final), " 10 \n")
