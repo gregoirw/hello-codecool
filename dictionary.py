@@ -35,8 +35,12 @@ while start==1:
             True
 
     if menu==1:
+        d={}
+
+        for row in csv.reader(open('filename.csv')):
+            d['%s' % row[0]] = {'definition': row[1], 'source': row[2]}
         xyz=input("Please enter the word you want to search for\n")
-        print(lpd.get(xyz))
+        print(d.get(xyz))
     elif menu==2:
         key_input=input("Please enter the appellation:")
         definition_input=input("Please enter the definition:")
